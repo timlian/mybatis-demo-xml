@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.mybatis:mybatis:3.2.2'
+    testCompile 'junit:junit:4.11'
+    runtime 'mysql:mysql-connector-java:5.1.22'
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    runtime 'org.slf4j:slf4j-log4j12:1.7.5'
+    runtime 'log4j:log4j:1.2.17'
+}
